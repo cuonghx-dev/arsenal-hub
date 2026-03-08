@@ -1,3 +1,11 @@
+hls: yes
+hlsAddress: :8888
+hlsAllowOrigin: "*"
+hlsVariant: mpegts
+hlsSegmentDuration: 1s
+hlsPartDuration: 200ms
+hlsSegmentCount: 7
+
 webrtc: yes
 webrtcAddress: :8889
 webrtcICEHostNAT1To1IPs:
