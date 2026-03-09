@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useHls } from "@/hooks/useHls";
+import { useWhep } from "@/hooks/useWhep";
 import { ChatSidebar } from "@/components/ChatSidebar";
 import arsenalLogo from "@/assets/arsenal-fc-logo.png";
 import {
@@ -40,7 +40,7 @@ function CtrlBtn({
 }
 
 export default function Home() {
-  const { videoRef, status, error, connect, disconnect } = useHls();
+  const { videoRef, status, error, connect, disconnect } = useWhep();
   const playerRef = useRef<HTMLDivElement>(null);
   const progressFillRef = useRef<HTMLDivElement>(null);
   const progRef = useRef(0);
